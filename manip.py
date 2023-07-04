@@ -13,13 +13,10 @@ if os.path.exists(dossier):
         '''
 
 fichier = "/home/vboxuser/tp/shell_script/text.txt"
-dossier = "/home/vboxuser/tp/shell_script/"
 script_shell1 = "/home/vboxuser/tp/shell_script/creation_script.sh"
 script_shell2 = "/home/vboxuser/tp/shell_script/reorganization_script.sh"
 repertoire_travail = "/home/vboxuser/tp/shell_script/"
-parametre1 = "kaat"
-parametre2 = "sudo"
-parametre3 = "4"
+
 
 with open(fichier, 'r') as f:
     lignes = f.readlines()
@@ -34,4 +31,4 @@ for ligne in lignes:
     subprocess.run([script_shell1, elements[0], elements[1], elements[2]], cwd=repertoire_travail)
     subprocess.run([script_shell2], cwd=repertoire_travail)
 
-os.system(f"tree {dossier}")
+os.system(f"tree {repertoire_travail}")
