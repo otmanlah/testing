@@ -25,8 +25,6 @@ donnees = []
 for ligne in lignes:
     ligne = ligne.rstrip('\n')
     elements = ligne.split(',')
-    #donnees.extend(elements)
-    #print(elements[0], elements[1], elements[2])
     print("le fichier exist")
     subprocess.run([script_shell1, elements[0], elements[1], elements[2]], cwd=repertoire_travail)
     subprocess.run([script_shell2], cwd=repertoire_travail)
