@@ -29,4 +29,5 @@ for ligne in lignes:
     subprocess.run([script_shell1, elements[0], elements[1], elements[2]], cwd=repertoire_travail)
     subprocess.run([script_shell2], cwd=repertoire_travail)
 
+
 os.system(f"tree {repertoire_travail}")
