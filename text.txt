@@ -1,0 +1,10 @@
+repo_name,prefix,fichiers
+devops,git,4
+devops,aws,4
+devops,azur,3
+data,spark,3
+data,scala,4
+data,gcp,3
+fonctionel,spac,3
+fonctionel,postpan,3
+fonctionel,sql,4
